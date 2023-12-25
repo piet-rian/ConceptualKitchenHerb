@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Kitchen Herb(香草)
+    性能面についてはホップ準拠、ただし肥沃度の影響は100%
+-->
+<Defs>
+    <!-- raw -->
+
+    <ThingDef ParentName="RoughPlantBase">
+        <defName>CKH_RawKitchenHerb</defName>
+        <label>kitchen herb</label>
+        <description>not a mint.</description>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/PlantFoodRaw/Hops</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.3</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>10</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>PlantMatter</li>
+        </thingCategories>
+        <ingestible>
+            <preferability>DesperateOnly</preferability>
+            <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+        </ingestible>
+    </ThingDef>
+
+    <!-- Plant -->
+
+    <ThingDef ParentName="PlantBase">
+        <defName>CKH_Plant_KitchenHerb</defName>
+        <label>kitchen herb plant</label>
+        <description>not a mint.</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Nutrition>0.2</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/HopsPlant</texPath>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>14</pathCost>
+        <ingestible />
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>5</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>CKH_RawKitchenHerb</harvestedThingDef>
+            <drugForHarvestPurposes>True</drugForHarvestPurposes>
+            <harvestYield>8</harvestYield>
+            <sowMinSkill>3</sowMinSkill>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>0.3~1.05</visualSizeRange>
+            <wildOrder>2</wildOrder>
+        </plant>
+    </ThingDef>
+
+</Defs>
