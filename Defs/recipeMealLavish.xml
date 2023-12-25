@@ -49,9 +49,7 @@
     <RecipeDef ParentName="CKH_CookMealLavishBase">
         <defName>CKH_CookMealLavish</defName>
         <label>cook lavish meal with kitchen herb</label>
-        <description>Cook a very complex meal from a combination of meat, plant and ketchen herb
-            ingredients. Much of the ingredients are wasted in order to create the best eating
-            experience.</description>
+        <description>Cook a very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking lavish meal.</jobString>
         <ingredients>
             <li>
@@ -94,9 +92,7 @@
     <RecipeDef ParentName="CKH_CookMealLavishBase">
         <defName>CKH_CookMealLavish_Meat</defName>
         <label>cook carnivore lavish meal with kitchen herb</label>
-        <description>Cook a very complex meal from meat ingredients. Much of the ingredients are
-            wasted in order to create the best eating experience. Producing varied flavors with meat
-            alone introduces extra inefficiencies.</description>
+        <description>Cook a very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking carnivore lavish meal.</jobString>
         <ingredients>
             <li>
@@ -134,9 +130,7 @@
     <RecipeDef ParentName="CKH_CookMealLavishBase">
         <defName>CKH_CookMealLavish_Veg</defName>
         <label>cook vegetarian lavish meal with kitchen herb</label>
-        <description>Cook a very complex meal from plant ingredients. Much of the ingredients are
-            wasted in order to create the best eating experience. Producing varied flavors with
-            plants alone introduces extra inefficiencies.</description>
+        <description>Cook a very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking vegetarian lavish meal.</jobString>
         <ingredients>
             <li>
@@ -182,8 +176,7 @@
     <RecipeDef ParentName="CKH_CookMealLavishBulkBase">
         <defName>CKH_CookMealLavishBulk</defName>
         <label>cook lavish meal with kitchen herb x4</label>
-        <description>Cook 4 very complex meals from a combination of meat and plant ingredients.
-            Much of the ingredients are wasted in order to create the best eating experience.</description>
+        <description>Cook 4 very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking 4 lavish meals.</jobString>
         <ingredients>
             <li>
@@ -226,9 +219,7 @@
     <RecipeDef ParentName="CKH_CookMealLavishBulkBase">
         <defName>CKH_CookMealLavishBulk_Veg</defName>
         <label>cook vegetarian lavish meal with kitchen herb x4</label>
-        <description>Cook 4 very complex meals from plant ingredients. Much of the ingredients are
-            wasted in order to create the best eating experience. Producing varied flavors with
-            plants alone introduces extra inefficiencies.</description>
+        <description>Cook 4 very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking 4 vegetarian lavish meals.</jobString>
         <ingredients>
             <li>
@@ -267,9 +258,7 @@
     <RecipeDef ParentName="CKH_CookMealLavishBulkBase">
         <defName>CKH_CookMealLavishBulk_Meat</defName>
         <label>cook carnivore lavish meal with kitchen herb x4</label>
-        <description>Cook 4 very complex meals from meat ingredients. Much of the ingredients are
-            wasted in order to create the best eating experience. Producing varied flavors with meat
-            alone introduces extra inefficiencies.</description>
+        <description>Cook 4 very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking 4 carnivore lavish meals.</jobString>
         <ingredients>
             <li>

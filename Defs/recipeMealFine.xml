@@ -50,7 +50,7 @@
     <RecipeDef ParentName="CKH_CookMealFineBase">
         <defName>CKH_CookMealFine</defName>
         <label>cook fine meal with kitchen herb</label>
-        <description>Cook a somewhat complex meal from a combination of meat, plant and kitchen herb  ingredients.</description>
+        <description>Cook a somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking fine meal.</jobString>
         <ingredients>
             <li>
@@ -95,7 +95,7 @@
     <RecipeDef ParentName="CKH_CookMealFineBase">
         <defName>CKH_CookMealFine_Veg</defName>
         <label>cook vegetarian fine meal with kitchen herb</label>
-        <description>Cook a somewhat complex meal from plant and kitchen herb ingredients.</description>
+        <description>Cook a somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking vegetarian fine meal.</jobString>
         <ingredients>
             <li>
@@ -135,7 +135,7 @@
     <RecipeDef ParentName="CKH_CookMealFineBase">
         <defName>CKH_CookMealFine_Meat</defName>
         <label>cook carnivore fine meal with kitchen herb</label>
-        <description>Cook a somewhat complex meal from meat and kitchen herb ingredients.</description>
+        <description>Cook a somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking carnivore fine meal.</jobString>
         <ingredients>
             <li>
@@ -181,7 +181,7 @@
     <RecipeDef ParentName="CKH_CookMealFineBulkBase">
         <defName>CKH_CookMealFineBulk</defName>
         <label>cook fine meal with kitchen herb x4</label>
-        <description>Cook 4 somewhat complex meal from a combination of meat, plant and kitchen herb ingredients.</description>
+        <description>Cook 4 somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking fine meal.</jobString>
         <ingredients>
             <li>
@@ -226,7 +226,7 @@
     <RecipeDef ParentName="CKH_CookMealFineBulkBase">
         <defName>CKH_CookMealFineBulk_Veg</defName>
         <label>cook vegetarian fine meal with kitchen herb x4</label>
-        <description>Cook 4 somewhat complex meal from plant and kitchen herb ingredients.</description>
+        <description>Cook 4 somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking vegetarian fine meal.</jobString>
         <ingredients>
             <li>
@@ -266,7 +266,7 @@
     <RecipeDef ParentName="CKH_CookMealFineBulkBase">
         <defName>CKH_CookMealFineBulk_Meat</defName>
         <label>cook carnivore fine meal with kitchen herb x4</label>
-        <description>Cook 4 somewhat complex meal from meat and kitchen herb ingredients.</description>
+        <description>Cook 4 somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes.</description>
         <jobString>Cooking carnivore fine meal.</jobString>
         <ingredients>
             <li>
