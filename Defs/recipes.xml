@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef ParentName="CookMealBase">
+        <defName>CKH_CookMealFine</defName>
+        <label>cook fine meal with kitchen herb</label>
+        <description>Cook a somewhat complex meal from a combination of meat , plant and kitchen herb ingredients.</description>
+        <jobString>Cooking fine meal.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>protein</customSummary>
+                    <categories>
+                        <li>MeatRaw</li>
+                        <li>AnimalProductRaw</li>
+                    </categories>
+                </filter>
+                <count>0.20</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                </filter>
+                <count>0.20</count>
+            </li>
+            <li>
+                <filter>
+                    <customSummary>kitchen herb</customSummary>
+                    <thingDefs>
+                        <li>CKH_RawKitchenHerb</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <MealFine>1</MealFine>
+        </products>
+        <displayPriority>200</displayPriority>
+        <recipeUsers>
+            <li>Campfire</li>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
+    </RecipeDef>
+
+</Defs>
