@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+    <!-- 
+        養価ベースのレシピでは「香草入れると材料少なくて済む」が実現できないため、個数ベースレシピとする
+        (単体で妙に栄養価の高い肉や野菜があった場合に逆にロスになるが、少なくとバニラ環境なら無いので問題ない)
+    -->
+    <RecipeDef Name="CKH_CookMealFineBase" Abstract="True">
+        <fixedIngredientFilter>
+            <categories>
+                <li>FoodRaw</li>
+                <li>PlantMatter</li>
+            </categories>
+            <specialFiltersToDisallow>
+                <li>AllowPlantFood</li>
+            </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>FoodRaw</li>
+            </categories>
+            <disallowedCategories>
+                <li>EggsFertilized</li>
+            </disallowedCategories>
+            <disallowedThingDefs>
+                <li>Meat_Human</li>
+                <li>Meat_Megaspider</li>
+                <li>InsectJelly</li>
+            </disallowedThingDefs>
+        </defaultIngredientFilter>
+        <workSkill>Cooking</workSkill>
 
-    <RecipeDef ParentName="CookMealBase">
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+
+        <skillRequirements>
+            <!-- 通常レシピより+1高いスキルを要求させる -->
+            <Cooking>7</Cooking>
+        </skillRequirements>
+    </RecipeDef>
+
+
+
+    <!-- キッチンハーブを使って手の込んだ料理を作る -->
+    <RecipeDef ParentName="CKH_CookMealFineBase">
         <defName>CKH_CookMealFine</defName>
         <label>cook fine meal with kitchen herb</label>
-        <description>Cook a somewhat complex meal from a combination of meat , plant and kitchen herb ingredients.</description>
+        <description>Cook a somewhat complex meal from a combination of meat, plant and kitchen herb  ingredients.</description>
         <jobString>Cooking fine meal.</jobString>
         <ingredients>
             <li>
@@ -15,7 +57,8 @@
                         <li>AnimalProductRaw</li>
                     </categories>
                 </filter>
-                <count>0.20</count>
+                <!-- 栄養価ベースのレシピだと0.25指定で、個数換算で5個要求されるので、それから減らして4とする -->
+                <count>4</count>
             </li>
             <li>
                 <filter>
@@ -23,7 +66,8 @@
                         <li>PlantFoodRaw</li>
                     </categories>
                 </filter>
-                <count>0.20</count>
+                <!-- 栄養価ベースのレシピだと0.25指定で、個数換算で5個要求されるので、それから減らして4とする -->
+                <count>4</count>
             </li>
             <li>
                 <filter>
@@ -32,6 +76,7 @@
                         <li>CKH_RawKitchenHerb</li>
                     </thingDefs>
                 </filter>
+                <!-- キッチンハーブを固定で1要求する -->
                 <count>1</count>
             </li>
         </ingredients>
@@ -40,10 +85,95 @@
         </products>
         <displayPriority>200</displayPriority>
         <recipeUsers>
-            <li>Campfire</li>
             <li>FueledStove</li>
             <li>ElectricStove</li>
         </recipeUsers>
     </RecipeDef>
 
+
+    <!-- キッチンハーブを使って手の込んだ野菜料理を作る -->
+    <RecipeDef ParentName="CKH_CookMealFineBase">
+        <defName>CKH_CookMealFine_Veg</defName>
+        <label>cook vegetarian fine meal with kitchen herb</label>
+        <description>Cook a somewhat complex meal from plant and kitchen herb ingredients.</description>
+        <jobString>Cooking vegetarian fine meal.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>vegetarian ingredients</customSummary>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                        <li>AnimalProductRaw</li>
+                    </categories>
+                </filter>
+                <!-- 栄養価ベースのレシピだと0.75指定で、個数換算で15個要求されるので、それから思い切って減らして10とする -->
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <customSummary>kitchen herb</customSummary>
+                    <thingDefs>
+                        <li>CKH_RawKitchenHerb</li>
+                    </thingDefs>
+                </filter>
+                <!-- キッチンハーブを固定で1要求する -->
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <disallowedCategories>
+                <li>MeatRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <MealFine_Veg>1</MealFine_Veg>
+        </products>
+        <displayPriority>700</displayPriority>
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef ParentName="CKH_CookMealFineBase">
+        <defName>CKH_CookMealFine_Meat</defName>
+        <label>cook carnivore fine meal with kitchen herb</label>
+        <description>Cook a somewhat complex meal from meat and kitchen herb ingredients.</description>
+        <jobString>Cooking carnivore fine meal.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>MeatRaw</li>
+                    </categories>
+                </filter>
+                <!-- 栄養価ベースのレシピだと0.75指定で、個数換算で15個要求されるので、それから思い切って減らして10とする -->
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <customSummary>kitchen herb</customSummary>
+                    <thingDefs>
+                        <li>CKH_RawKitchenHerb</li>
+                    </thingDefs>
+                </filter>
+                <!-- キッチンハーブを固定で1要求する -->
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <disallowedCategories>
+                <li>PlantFoodRaw</li>
+                <li>AnimalProductRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <MealFine_Meat>1</MealFine_Meat>
+        </products>
+        <displayPriority>1100</displayPriority>
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
+    </RecipeDef>
 </Defs>
