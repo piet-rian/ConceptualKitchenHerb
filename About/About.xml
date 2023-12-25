@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-    <!-- see. https://rimworldwiki.com/wiki/Modding_Tutorials/About.xml -->
+    <packageId>piet.rian.ckh</packageId>
+    <name>Conceptual Kitchen Herb</name>
+    <authors>
+        <li>piet-rian</li>
+    </authors>
+    <description>
+        Add "Kitchen Herb" and some recipes.
+    </description>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+
+    <modVersion>1.0</modVersion>
+    <url>https://github.com/piet-rian/ConceptualKitchenHerb</url>
+
+    <loadAfter>
+        <li>ludeon.rimworld</li>
+    </loadAfter>
 
 </ModMetaData>
