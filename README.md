@@ -1,23 +1,32 @@
-# RimworldXMLModTemplate
+# Conceptual Kitchen Herb (概念的香草)
 
-This is the template repository for XML-based mods in RIMWORLD.
+調理に使うことで使う素材を少なくできる "香草" を追加します。
 
-see. https://rimworldwiki.com/wiki/Modding_Tutorials/Mod_Folder_Structure
+## DETAIL
+
+- 植物および植物原料として "香草" を追加
+  - ホップと同じグループです
+- 香草を用いた、従来のレシピより少ない材料で作れるレシピの追加
+  - 手の込んだ料理群と豪華な料理群のみ
 
 ## MID-SAVE
 
-途中導入および途中除去についての記述
+途中導入は問題ありませんが、途中で削除した場合には問題があると思われます。
+
+ただし、本 Mod 起因のアイテムやレシピがなくなるといったような問題であるため、セーブが読み込めなくなると行ったことは起きにくいと思われます。
 
 ## CONFLICT
 
-競合が予想されるmodについての記述
+おそらく競合は発生しないでしょう。
+
+ただし、一部の農業関連の Mod や料理関連の Mod が、本 Mod で追加した内容に対応していない可能性はあります。
 
 ## NOTICE
 
 本Modは [BSD 3-Clause “New” or “Revised” License](LICENSE) で提供されています。
 
-謝辞および使用している素材・ライブラリは [NOTICE.md](NOTICE) に記載してあります。
-
 ## CONTRIBUTING
 
 [リポジトリに対する各種貢献についての指針](https://github.com/piet-rian/.github/blob/main/CONTRIBUTING.md) を参照した上でお願いします。
+
+ただし、テクスチャ画像の提供については積極的に受け入れています。
