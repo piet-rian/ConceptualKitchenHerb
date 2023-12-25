@@ -178,13 +178,13 @@
 
     <!--  bulk -->
 
-    <RecipeDef Name="CookMealFineBulkBase" ParentName="CKH_CookMealFineBase" Abstract="True">
+    <RecipeDef Name="CKH_CookMealFineBulkBase" ParentName="CKH_CookMealFineBase" Abstract="True">
         <workAmount>1800</workAmount>
     </RecipeDef>
 
 
     <!-- キッチンハーブを使って手の込んだ料理を作る -->
-    <RecipeDef ParentName="CookMealFineBulkBase">
+    <RecipeDef ParentName="CKH_CookMealFineBulkBase">
         <defName>CKH_CookMealFineBulk</defName>
         <label>cook fine meal with kitchen herb x4</label>
         <description>Cook 4 somewhat complex meal from a combination of meat, plant and kitchen herb ingredients.</description>
@@ -233,7 +233,7 @@
 
 
     <!-- キッチンハーブを使って手の込んだ野菜料理を作る -->
-    <RecipeDef ParentName="CookMealFineBulkBase">
+    <RecipeDef ParentName="CKH_CookMealFineBulkBase">
         <defName>CKH_CookMealFineBulk_Veg</defName>
         <label>cook vegetarian fine meal with kitchen herb x4</label>
         <description>Cook 4 somewhat complex meal from plant and kitchen herb ingredients.</description>
@@ -277,7 +277,7 @@
     </RecipeDef>
 
     <!-- キッチンハーブを使って手の込んだ肉料理を作る -->
-    <RecipeDef ParentName="CKH_CookMealFineBase">
+    <RecipeDef ParentName="CKH_CookMealFineBulkBase">
         <defName>CKH_CookMealFineBulk_Meat</defName>
         <label>cook carnivore fine meal with kitchen herb x4</label>
         <description>Cook 4 somewhat complex meal from meat and kitchen herb ingredients.</description>
