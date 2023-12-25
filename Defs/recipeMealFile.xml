@@ -104,8 +104,8 @@
                         <li>AnimalProductRaw</li>
                     </categories>
                 </filter>
-                <!-- 栄養価ベースのレシピだと0.75指定で、個数換算で15個要求されるので、それから思い切って減らして10とする -->
-                <count>10</count>
+                <!-- 栄養価ベースのレシピだと0.75指定で、個数換算で15個要求されるので、それから思い切って減らして12とする -->
+                <count>12</count>
             </li>
             <li>
                 <filter>
@@ -146,8 +146,8 @@
                         <li>MeatRaw</li>
                     </categories>
                 </filter>
-                <!-- 栄養価ベースのレシピだと0.75指定で、個数換算で15個要求されるので、それから思い切って減らして10とする -->
-                <count>10</count>
+                <!-- 栄養価ベースのレシピだと0.75指定で、個数換算で15個要求されるので、それから減らして12とする -->
+                <count>12</count>
             </li>
             <li>
                 <filter>
@@ -248,7 +248,7 @@
                     </categories>
                 </filter>
                 <!-- 単純に単品レシピの4倍 -->
-                <count>40</count>
+                <count>48</count>
             </li>
             <li>
                 <filter>
@@ -290,7 +290,7 @@
                     </categories>
                 </filter>
                 <!-- 単純に単品レシピの4倍 -->
-                <count>40</count>
+                <count>48</count>
             </li>
             <li>
                 <filter>
