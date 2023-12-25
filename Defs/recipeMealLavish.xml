@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- 
+        養価ベースのレシピでは「香草入れると材料少なくて済む」が実現できないため、個数ベースレシピとする
+        (単体で妙に栄養価の高い肉や野菜があった場合に逆にロスになるが、少なくとバニラ環境なら無いので問題ない)
+    -->
+    <RecipeDef Name="CKH_CookMealLavishBase" Abstract="True">
+        <fixedIngredientFilter>
+            <categories>
+                <li>FoodRaw</li>
+                <li>PlantMatter</li>
+            </categories>
+            <specialFiltersToDisallow>
+                <li>AllowPlantFood</li>
+            </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>FoodRaw</li>
+            </categories>
+            <disallowedCategories>
+                <li>EggsFertilized</li>
+            </disallowedCategories>
+            <disallowedThingDefs>
+                <li>Meat_Human</li>
+                <li>Meat_Megaspider</li>
+                <li>InsectJelly</li>
+            </disallowedThingDefs>
+        </defaultIngredientFilter>
+        <workSkill>Cooking</workSkill>
+
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+
+        <skillRequirements>
+            <!-- 通常レシピより+1高いスキルを要求させる -->
+            <Cooking>9</Cooking>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="CKH_CookMealLavishBase">
+        <defName>CKH_CookMealLavish</defName>
+        <label>cook lavish meal with kitchen herb</label>
+        <description>Cook a very complex meal from a combination of meat, plant and ketchen herb ingredients. Much of the ingredients are wasted in order to create the best eating experience.</description>
+        <jobString>Cooking lavish meal.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>protein</customSummary>
+                    <categories>
+                        <li>MeatRaw</li>
+                        <li>AnimalProductRaw</li>
+                    </categories>
+                </filter>
+                <!-- 栄養価ベースのレシピだと0.5指定で、個数換算で10個要求されるので、それから減らして8とする -->
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                </filter>
+                <!-- 栄養価ベースのレシピだと0.5指定で、個数換算で10個要求されるので、それから減らして8とする -->
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <customSummary>kitchen herb</customSummary>
+                    <thingDefs>
+                        <li>CKH_RawKitchenHerb</li>
+                    </thingDefs>
+                </filter>
+                <!-- キッチンハーブを固定で3要求する -->
+                <count>3</count>
+            </li>
+        </ingredients>
+        <products>
+            <MealLavish>1</MealLavish>
+        </products>
+        <displayPriority>300</displayPriority>
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
+    </RecipeDef>
+</Defs>
