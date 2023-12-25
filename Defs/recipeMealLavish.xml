@@ -39,6 +39,11 @@
             <!-- 通常レシピより+1高いスキルを要求させる -->
             <Cooking>9</Cooking>
         </skillRequirements>
+
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
     </RecipeDef>
 
     <RecipeDef ParentName="CKH_CookMealLavishBase">
@@ -84,15 +89,11 @@
             <MealLavish>1</MealLavish>
         </products>
         <displayPriority>300</displayPriority>
-        <recipeUsers>
-            <li>FueledStove</li>
-            <li>ElectricStove</li>
-        </recipeUsers>
     </RecipeDef>
 
     <RecipeDef ParentName="CKH_CookMealLavishBase">
         <defName>CKH_CookMealLavish_Meat</defName>
-        <label>cook carnivore lavish meal</label>
+        <label>cook carnivore lavish meal with kitchen herb</label>
         <description>Cook a very complex meal from meat ingredients. Much of the ingredients are
             wasted in order to create the best eating experience. Producing varied flavors with meat
             alone introduces extra inefficiencies.</description>
@@ -132,7 +133,7 @@
 
     <RecipeDef ParentName="CKH_CookMealLavishBase">
         <defName>CKH_CookMealLavish_Veg</defName>
-        <label>cook vegetarian lavish meal</label>
+        <label>cook vegetarian lavish meal with kitchen herb</label>
         <description>Cook a very complex meal from plant ingredients. Much of the ingredients are
             wasted in order to create the best eating experience. Producing varied flavors with
             plants alone introduces extra inefficiencies.</description>
@@ -169,5 +170,137 @@
             <MealLavish_Veg>1</MealLavish_Veg>
         </products>
         <displayPriority>800</displayPriority>
+    </RecipeDef>
+
+    <!--  bulk -->
+
+    <RecipeDef Name="CKH_CookMealLavishBulkBase" ParentName="CKH_CookMealLavishBase" Abstract="True">
+        <workAmount>3200</workAmount>
+    </RecipeDef>
+
+
+    <RecipeDef ParentName="CKH_CookMealLavishBulkBase">
+        <defName>CKH_CookMealLavishBulk</defName>
+        <label>cook lavish meal with kitchen herb x4</label>
+        <description>Cook 4 very complex meals from a combination of meat and plant ingredients.
+            Much of the ingredients are wasted in order to create the best eating experience.</description>
+        <jobString>Cooking 4 lavish meals.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>protein</customSummary>
+                    <categories>
+                        <li>MeatRaw</li>
+                        <li>AnimalProductRaw</li>
+                    </categories>
+                </filter>
+                <!-- 単純に4倍要求する -->
+                <count>32</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                </filter>
+                <!-- 単純に4倍要求する -->
+                <count>32</count>
+            </li>
+            <li>
+                <filter>
+                    <customSummary>kitchen herb</customSummary>
+                    <thingDefs>
+                        <li>CKH_RawKitchenHerb</li>
+                    </thingDefs>
+                </filter>
+                <!-- 単純に4倍要求する -->
+                <count>12</count>
+            </li>
+        </ingredients>
+        <products>
+            <MealLavish>4</MealLavish>
+        </products>
+        <displayPriority>600</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef ParentName="CKH_CookMealLavishBulkBase">
+        <defName>CKH_CookMealLavishBulk_Veg</defName>
+        <label>cook vegetarian lavish meal with kitchen herb x4</label>
+        <description>Cook 4 very complex meals from plant ingredients. Much of the ingredients are
+            wasted in order to create the best eating experience. Producing varied flavors with
+            plants alone introduces extra inefficiencies.</description>
+        <jobString>Cooking 4 vegetarian lavish meals.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>vegetarian ingredients</customSummary>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                        <li>AnimalProductRaw</li>
+                    </categories>
+                </filter>
+                <!-- 単純に4倍要求する -->
+                <count>80</count>
+            </li>
+            <li>
+                <filter>
+                    <customSummary>kitchen herb</customSummary>
+                    <thingDefs>
+                        <li>CKH_RawKitchenHerb</li>
+                    </thingDefs>
+                </filter>
+                <!-- 単純に4倍要求する -->
+                <count>12</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <disallowedCategories>
+                <li>MeatRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <MealLavish_Veg>4</MealLavish_Veg>
+        </products>
+        <displayPriority>1000</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef ParentName="CKH_CookMealLavishBulkBase">
+        <defName>CKH_CookMealLavishBulk_Meat</defName>
+        <label>cook carnivore lavish meal with kitchen herb x4</label>
+        <description>Cook 4 very complex meals from meat ingredients. Much of the ingredients are
+            wasted in order to create the best eating experience. Producing varied flavors with meat
+            alone introduces extra inefficiencies.</description>
+        <jobString>Cooking 4 carnivore lavish meals.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>MeatRaw</li>
+                    </categories>
+                </filter>
+                <!-- 単純に4倍要求する -->
+                <count>80</count>
+            </li>
+            <li>
+                <filter>
+                    <customSummary>kitchen herb</customSummary>
+                    <thingDefs>
+                        <li>CKH_RawKitchenHerb</li>
+                    </thingDefs>
+                </filter>
+                <!-- 単純に4倍要求する -->
+                <count>12</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <disallowedCategories>
+                <li>PlantFoodRaw</li>
+                <li>AnimalProductRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <MealLavish_Meat>4</MealLavish_Meat>
+        </products>
+        <displayPriority>1400</displayPriority>
     </RecipeDef>
 </Defs>
