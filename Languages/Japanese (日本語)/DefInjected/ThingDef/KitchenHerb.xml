@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: kitchen herb plant -->
+  <CKH_Plant_KitchenHerb.label>香草</CKH_Plant_KitchenHerb.label>
+  <!-- EN: not a mint. -->
+  <CKH_Plant_KitchenHerb.description>キッチンハーブと呼ばれる調理に用いる植物です。</CKH_Plant_KitchenHerb.description>
+  
+  <!-- EN: kitchen herb -->
+  <CKH_RawKitchenHerb.label>香草(生)</CKH_RawKitchenHerb.label>
+  <!-- EN: not a mint. -->
+  <CKH_RawKitchenHerb.description>香りよく消化吸収を助ける効果のある香草です。香草を使った専用のレシピで、少ない食料で手の込んだ料理・豪華な料理を作ることができます。</CKH_RawKitchenHerb.description>
+  
+</LanguageData>

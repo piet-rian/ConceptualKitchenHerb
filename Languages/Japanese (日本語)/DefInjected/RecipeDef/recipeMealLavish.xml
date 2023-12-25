@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: cook lavish meal with kitchen herb -->
+  <CKH_CookMealLavish.label>豪華な料理(香草)</CKH_CookMealLavish.label>
+  <!-- EN: Cook a very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealLavish.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealLavish.description>
+  <!-- EN: protein -->
+  <CKH_CookMealLavish.ingredients.0.filter.customSummary>タンパク質類</CKH_CookMealLavish.ingredients.0.filter.customSummary>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealLavish.ingredients.2.filter.customSummary>香草</CKH_CookMealLavish.ingredients.2.filter.customSummary>
+  <!-- EN: Cooking lavish meal. -->
+  <CKH_CookMealLavish.jobString>豪華な料理を作っています</CKH_CookMealLavish.jobString>
+  
+  <!-- EN: cook carnivore lavish meal with kitchen herb -->
+  <CKH_CookMealLavish_Meat.label>豪華な肉料理(香草)</CKH_CookMealLavish_Meat.label>
+  <!-- EN: Cook a very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealLavish_Meat.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealLavish_Meat.description>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealLavish_Meat.ingredients.1.filter.customSummary>香草</CKH_CookMealLavish_Meat.ingredients.1.filter.customSummary>
+  <!-- EN: Cooking carnivore lavish meal. -->
+  <CKH_CookMealLavish_Meat.jobString>豪華な肉料理を作っています</CKH_CookMealLavish_Meat.jobString>
+  
+  <!-- EN: cook vegetarian lavish meal with kitchen herb -->
+  <CKH_CookMealLavish_Veg.label>豪華な野菜料理(香草)</CKH_CookMealLavish_Veg.label>
+  <!-- EN: Cook a very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealLavish_Veg.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealLavish_Veg.description>
+  <!-- EN: vegetarian ingredients -->
+  <CKH_CookMealLavish_Veg.ingredients.0.filter.customSummary>生野菜</CKH_CookMealLavish_Veg.ingredients.0.filter.customSummary>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealLavish_Veg.ingredients.1.filter.customSummary>香草</CKH_CookMealLavish_Veg.ingredients.1.filter.customSummary>
+  <!-- EN: Cooking vegetarian lavish meal. -->
+  <CKH_CookMealLavish_Veg.jobString>豪華な野菜料理を作っています</CKH_CookMealLavish_Veg.jobString>
+  
+  <!-- EN: cook lavish meal with kitchen herb x4 -->
+  <CKH_CookMealLavishBulk.label>豪華な料理(香草) x4</CKH_CookMealLavishBulk.label>
+  <!-- EN: Cook 4 very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealLavishBulk.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealLavishBulk.description>
+  <!-- EN: protein -->
+  <CKH_CookMealLavishBulk.ingredients.0.filter.customSummary>タンパク質類</CKH_CookMealLavishBulk.ingredients.0.filter.customSummary>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealLavishBulk.ingredients.2.filter.customSummary>香草</CKH_CookMealLavishBulk.ingredients.2.filter.customSummary>
+  <!-- EN: Cooking 4 lavish meals. -->
+  <CKH_CookMealLavishBulk.jobString>豪華な料理を作っています</CKH_CookMealLavishBulk.jobString>
+  
+  <!-- EN: cook carnivore lavish meal with kitchen herb x4 -->
+  <CKH_CookMealLavishBulk_Meat.label>豪華な肉料理(香草) x4</CKH_CookMealLavishBulk_Meat.label>
+  <!-- EN: Cook 4 very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealLavishBulk_Meat.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealLavishBulk_Meat.description>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealLavishBulk_Meat.ingredients.1.filter.customSummary>香草</CKH_CookMealLavishBulk_Meat.ingredients.1.filter.customSummary>
+  <!-- EN: Cooking 4 carnivore lavish meals. -->
+  <CKH_CookMealLavishBulk_Meat.jobString>豪華な肉料理を作っています</CKH_CookMealLavishBulk_Meat.jobString>
+  
+  <!-- EN: cook vegetarian lavish meal with kitchen herb x4 -->
+  <CKH_CookMealLavishBulk_Veg.label>豪華な野菜料理(香草) x4</CKH_CookMealLavishBulk_Veg.label>
+  <!-- EN: Cook 4 very complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealLavishBulk_Veg.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealLavishBulk_Veg.description>
+  <!-- EN: vegetarian ingredients -->
+  <CKH_CookMealLavishBulk_Veg.ingredients.0.filter.customSummary>生野菜</CKH_CookMealLavishBulk_Veg.ingredients.0.filter.customSummary>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealLavishBulk_Veg.ingredients.1.filter.customSummary>香草</CKH_CookMealLavishBulk_Veg.ingredients.1.filter.customSummary>
+  <!-- EN: Cooking 4 vegetarian lavish meals. -->
+  <CKH_CookMealLavishBulk_Veg.jobString>豪華な野菜料理を作っています</CKH_CookMealLavishBulk_Veg.jobString>
+  
+</LanguageData>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: cook fine meal with kitchen herb -->
+  <CKH_CookMealFine.label>手の込んだ料理(香草)</CKH_CookMealFine.label>
+  <!-- EN: Cook a somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealFine.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealFine.description>
+  <!-- EN: protein -->
+  <CKH_CookMealFine.ingredients.0.filter.customSummary>タンパク質類</CKH_CookMealFine.ingredients.0.filter.customSummary>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealFine.ingredients.2.filter.customSummary>香草</CKH_CookMealFine.ingredients.2.filter.customSummary>
+  <!-- EN: Cooking fine meal. -->
+  <CKH_CookMealFine.jobString>手の込んだ料理を作っています</CKH_CookMealFine.jobString>
+  
+  <!-- EN: cook carnivore fine meal with kitchen herb -->
+  <CKH_CookMealFine_Meat.label>手の込んだ肉料理(香草)</CKH_CookMealFine_Meat.label>
+  <!-- EN: Cook a somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealFine_Meat.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealFine_Meat.description>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealFine_Meat.ingredients.1.filter.customSummary>香草</CKH_CookMealFine_Meat.ingredients.1.filter.customSummary>
+  <!-- EN: Cooking carnivore fine meal. -->
+  <CKH_CookMealFine_Meat.jobString>手の込んだ肉料理を作っています</CKH_CookMealFine_Meat.jobString>
+  
+  <!-- EN: cook vegetarian fine meal with kitchen herb -->
+  <CKH_CookMealFine_Veg.label>手の込んだ野菜料理(香草)</CKH_CookMealFine_Veg.label>
+  <!-- EN: Cook a somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealFine_Veg.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealFine_Veg.description>
+  <!-- EN: vegetarian ingredients -->
+  <CKH_CookMealFine_Veg.ingredients.0.filter.customSummary>生野菜</CKH_CookMealFine_Veg.ingredients.0.filter.customSummary>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealFine_Veg.ingredients.1.filter.customSummary>香草</CKH_CookMealFine_Veg.ingredients.1.filter.customSummary>
+  <!-- EN: Cooking vegetarian fine meal. -->
+  <CKH_CookMealFine_Veg.jobString>手の込んだ野菜料理を作っています</CKH_CookMealFine_Veg.jobString>
+  
+  <!-- EN: cook fine meal with kitchen herb x4 -->
+  <CKH_CookMealFineBulk.label>手の込んだ料理(香草) x4</CKH_CookMealFineBulk.label>
+  <!-- EN: Cook 4 somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealFineBulk.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealFineBulk.description>
+  <!-- EN: protein -->
+  <CKH_CookMealFineBulk.ingredients.0.filter.customSummary>タンパク質類</CKH_CookMealFineBulk.ingredients.0.filter.customSummary>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealFineBulk.ingredients.2.filter.customSummary>香草</CKH_CookMealFineBulk.ingredients.2.filter.customSummary>
+  <!-- EN: Cooking fine meal. -->
+  <CKH_CookMealFineBulk.jobString>手の込んだ料理を作っています</CKH_CookMealFineBulk.jobString>
+  
+  <!-- EN: cook carnivore fine meal with kitchen herb x4 -->
+  <CKH_CookMealFineBulk_Meat.label>手の込んだ肉料理(香草) x4</CKH_CookMealFineBulk_Meat.label>
+  <!-- EN: Cook 4 somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealFineBulk_Meat.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealFineBulk_Meat.description>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealFineBulk_Meat.ingredients.1.filter.customSummary>香草</CKH_CookMealFineBulk_Meat.ingredients.1.filter.customSummary>
+  <!-- EN: Cooking carnivore fine meal. -->
+  <CKH_CookMealFineBulk_Meat.jobString>手の込んだ肉料理を作っています</CKH_CookMealFineBulk_Meat.jobString>
+  
+  <!-- EN: cook vegetarian fine meal with kitchen herb x4 -->
+  <CKH_CookMealFineBulk_Veg.label>手の込んだ野菜料理(香草) x4</CKH_CookMealFineBulk_Veg.label>
+  <!-- EN: Cook 4 somewhat complex meal using kitchen herbs as well. Can be made with fewer ingredients than regular recipes. -->
+  <CKH_CookMealFineBulk_Veg.description>香草を使って普通のレシピより少ない材料で作ります。</CKH_CookMealFineBulk_Veg.description>
+  <!-- EN: vegetarian ingredients -->
+  <CKH_CookMealFineBulk_Veg.ingredients.0.filter.customSummary>生野菜</CKH_CookMealFineBulk_Veg.ingredients.0.filter.customSummary>
+  <!-- EN: kitchen herb -->
+  <CKH_CookMealFineBulk_Veg.ingredients.1.filter.customSummary>香草</CKH_CookMealFineBulk_Veg.ingredients.1.filter.customSummary>
+  <!-- EN: Cooking vegetarian fine meal. -->
+  <CKH_CookMealFineBulk_Veg.jobString>手の込んだ野菜料理を作っています</CKH_CookMealFineBulk_Veg.jobString>
+  
+</LanguageData>
