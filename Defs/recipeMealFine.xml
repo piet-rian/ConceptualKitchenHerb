@@ -38,6 +38,12 @@
             <!-- 通常レシピより+1高いスキルを要求させる -->
             <Cooking>7</Cooking>
         </skillRequirements>
+
+
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
     </RecipeDef>
 
     <!-- キッチンハーブを使って手の込んだ料理を作る -->
@@ -82,10 +88,6 @@
             <MealFine>1</MealFine>
         </products>
         <displayPriority>200</displayPriority>
-        <recipeUsers>
-            <li>FueledStove</li>
-            <li>ElectricStove</li>
-        </recipeUsers>
     </RecipeDef>
 
 
@@ -127,10 +129,6 @@
             <MealFine_Veg>1</MealFine_Veg>
         </products>
         <displayPriority>700</displayPriority>
-        <recipeUsers>
-            <li>FueledStove</li>
-            <li>ElectricStove</li>
-        </recipeUsers>
     </RecipeDef>
 
     <!-- キッチンハーブを使って手の込んだ肉料理を作る -->
@@ -170,10 +168,6 @@
             <MealFine_Meat>1</MealFine_Meat>
         </products>
         <displayPriority>1100</displayPriority>
-        <recipeUsers>
-            <li>FueledStove</li>
-            <li>ElectricStove</li>
-        </recipeUsers>
     </RecipeDef>
 
     <!--  bulk -->
@@ -225,10 +219,6 @@
             <MealFine>4</MealFine>
         </products>
         <displayPriority>500</displayPriority>
-        <recipeUsers>
-            <li>FueledStove</li>
-            <li>ElectricStove</li>
-        </recipeUsers>
     </RecipeDef>
 
 
@@ -270,10 +260,6 @@
             <MealFine_Veg>4</MealFine_Veg>
         </products>
         <displayPriority>900</displayPriority>
-        <recipeUsers>
-            <li>FueledStove</li>
-            <li>ElectricStove</li>
-        </recipeUsers>
     </RecipeDef>
 
     <!-- キッチンハーブを使って手の込んだ肉料理を作る -->
@@ -313,9 +299,5 @@
             <MealFine_Meat>4</MealFine_Meat>
         </products>
         <displayPriority>1300</displayPriority>
-        <recipeUsers>
-            <li>FueledStove</li>
-            <li>ElectricStove</li>
-        </recipeUsers>
     </RecipeDef>
 </Defs>
