@@ -222,7 +222,7 @@
             </li>
         </ingredients>
         <products>
-            <MealFine>1</MealFine>
+            <MealFine>4</MealFine>
         </products>
         <displayPriority>500</displayPriority>
         <recipeUsers>
@@ -267,7 +267,7 @@
             </disallowedCategories>
         </fixedIngredientFilter>
         <products>
-            <MealFine_Veg>1</MealFine_Veg>
+            <MealFine_Veg>4</MealFine_Veg>
         </products>
         <displayPriority>900</displayPriority>
         <recipeUsers>
@@ -310,7 +310,7 @@
             </disallowedCategories>
         </fixedIngredientFilter>
         <products>
-            <MealFine_Meat>1</MealFine_Meat>
+            <MealFine_Meat>4</MealFine_Meat>
         </products>
         <displayPriority>1300</displayPriority>
         <recipeUsers>
