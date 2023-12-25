@@ -40,8 +40,6 @@
         </skillRequirements>
     </RecipeDef>
 
-
-
     <!-- キッチンハーブを使って手の込んだ料理を作る -->
     <RecipeDef ParentName="CKH_CookMealFineBase">
         <defName>CKH_CookMealFine</defName>
@@ -135,6 +133,7 @@
         </recipeUsers>
     </RecipeDef>
 
+    <!-- キッチンハーブを使って手の込んだ肉料理を作る -->
     <RecipeDef ParentName="CKH_CookMealFineBase">
         <defName>CKH_CookMealFine_Meat</defName>
         <label>cook carnivore fine meal with kitchen herb</label>
@@ -171,6 +170,149 @@
             <MealFine_Meat>1</MealFine_Meat>
         </products>
         <displayPriority>1100</displayPriority>
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <!--  bulk -->
+
+    <RecipeDef Name="CookMealFineBulkBase" ParentName="CKH_CookMealFineBase" Abstract="True">
+        <workAmount>1800</workAmount>
+    </RecipeDef>
+
+
+    <!-- キッチンハーブを使って手の込んだ料理を作る -->
+    <RecipeDef ParentName="CookMealFineBulkBase">
+        <defName>CKH_CookMealFineBulk</defName>
+        <label>cook fine meal with kitchen herb x4</label>
+        <description>Cook 4 somewhat complex meal from a combination of meat, plant and kitchen herb ingredients.</description>
+        <jobString>Cooking fine meal.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>protein</customSummary>
+                    <categories>
+                        <li>MeatRaw</li>
+                        <li>AnimalProductRaw</li>
+                    </categories>
+                </filter>
+                <!-- 単純に単品レシピの4倍 -->
+                <count>16</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                </filter>
+                <!-- 単純に単品レシピの4倍 -->
+                <count>16</count>
+            </li>
+            <li>
+                <filter>
+                    <customSummary>kitchen herb</customSummary>
+                    <thingDefs>
+                        <li>CKH_RawKitchenHerb</li>
+                    </thingDefs>
+                </filter>
+                <!-- 単純に単品レシピの4倍 -->
+                <count>4</count>
+            </li>
+        </ingredients>
+        <products>
+            <MealFine>1</MealFine>
+        </products>
+        <displayPriority>500</displayPriority>
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
+    </RecipeDef>
+
+
+    <!-- キッチンハーブを使って手の込んだ野菜料理を作る -->
+    <RecipeDef ParentName="CookMealFineBulkBase">
+        <defName>CKH_CookMealFineBulk_Veg</defName>
+        <label>cook vegetarian fine meal with kitchen herb x4</label>
+        <description>Cook 4 somewhat complex meal from plant and kitchen herb ingredients.</description>
+        <jobString>Cooking vegetarian fine meal.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>vegetarian ingredients</customSummary>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                        <li>AnimalProductRaw</li>
+                    </categories>
+                </filter>
+                <!-- 単純に単品レシピの4倍 -->
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <customSummary>kitchen herb</customSummary>
+                    <thingDefs>
+                        <li>CKH_RawKitchenHerb</li>
+                    </thingDefs>
+                </filter>
+                <!-- 単純に単品レシピの4倍 -->
+                <count>4</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <disallowedCategories>
+                <li>MeatRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <MealFine_Veg>1</MealFine_Veg>
+        </products>
+        <displayPriority>900</displayPriority>
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <!-- キッチンハーブを使って手の込んだ肉料理を作る -->
+    <RecipeDef ParentName="CKH_CookMealFineBase">
+        <defName>CKH_CookMealFineBulk_Meat</defName>
+        <label>cook carnivore fine meal with kitchen herb x4</label>
+        <description>Cook 4 somewhat complex meal from meat and kitchen herb ingredients.</description>
+        <jobString>Cooking carnivore fine meal.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>MeatRaw</li>
+                    </categories>
+                </filter>
+                <!-- 単純に単品レシピの4倍 -->
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <customSummary>kitchen herb</customSummary>
+                    <thingDefs>
+                        <li>CKH_RawKitchenHerb</li>
+                    </thingDefs>
+                </filter>
+                <!-- 単純に単品レシピの4倍 -->
+                <count>4</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <disallowedCategories>
+                <li>PlantFoodRaw</li>
+                <li>AnimalProductRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <MealFine_Meat>1</MealFine_Meat>
+        </products>
+        <displayPriority>1300</displayPriority>
         <recipeUsers>
             <li>FueledStove</li>
             <li>ElectricStove</li>
