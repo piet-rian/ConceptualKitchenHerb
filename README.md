@@ -25,8 +25,6 @@
 
 本Modは [BSD 3-Clause “New” or “Revised” License](LICENSE) で提供されています。
 
-## CONTRIBUTING
-
-[リポジトリに対する各種貢献についての指針](https://github.com/piet-rian/.github/blob/main/CONTRIBUTING.md) を参照した上でお願いします。
+プルリクエストおよびイシューについては [リポジトリに対する各種貢献についての指針](https://github.com/piet-rian/.github/blob/main/CONTRIBUTING.md) を参照した上でお願いします。
 
 ただし、テクスチャ画像の提供については積極的に受け入れています。
