@@ -2,8 +2,8 @@
 <Defs>
 
     <!-- 
-        養価ベースのレシピでは「香草入れると材料少なくて済む」が実現できないため、個数ベースレシピとする
-        (単体で妙に栄養価の高い肉や野菜があった場合に逆にロスになるが、少なくとバニラ環境なら無いので問題ない)
+        キッチンハーブの栄養を含めて、元レシピの80~90%の栄養効率で作れるように設定する
+        memo. キッチンハーブ含め、一般的な食料は0.05[栄養/個]
     -->
     <RecipeDef Name="CKH_CookMealLavishBase" Abstract="True">
         <fixedIngredientFilter>
@@ -35,6 +35,9 @@
         <soundWorking>Recipe_CookMeal</soundWorking>
         <allowMixingIngredients>true</allowMixingIngredients>
 
+        <!-- カロリーベース -->
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+
         <skillRequirements>
             <!-- 通常レシピより+1高いスキルを要求させる -->
             <Cooking>9</Cooking>
@@ -60,8 +63,8 @@
                         <li>AnimalProductRaw</li>
                     </categories>
                 </filter>
-                <!-- 栄養価ベースのレシピだと0.5指定で、個数換算で10個要求されるので、それから減らして8とする -->
-                <count>8</count>
+                <!-- 元レシピが0.5指定。元の80%になるようにする。 -->
+                <count>0.4</count>
             </li>
             <li>
                 <filter>
@@ -69,8 +72,8 @@
                         <li>PlantFoodRaw</li>
                     </categories>
                 </filter>
-                <!-- 栄養価ベースのレシピだと0.5指定で、個数換算で10個要求されるので、それから減らして8とする -->
-                <count>8</count>
+                <!-- 元レシピが0.5指定。元の80%になるようにする。 -->
+                <count>0.4</count>
             </li>
             <li>
                 <filter>
@@ -79,8 +82,8 @@
                         <li>CKH_RawKitchenHerb</li>
                     </thingDefs>
                 </filter>
-                <!-- キッチンハーブを固定で3要求する -->
-                <count>3</count>
+                <!-- 実数が2になるように0.1とする -->
+                <count>0.1</count>
             </li>
         </ingredients>
         <products>
@@ -101,8 +104,8 @@
                         <li>MeatRaw</li>
                     </categories>
                 </filter>
-                <!-- 栄養価ベースのレシピだと1.25指定で、個数換算で25個要求されるので、それから減らして20とする -->
-                <count>20</count>
+                <!-- 元レシピが1.25指定。元の80%になるようにする。 -->
+                <count>1.0</count>
             </li>
             <li>
                 <filter>
@@ -111,8 +114,8 @@
                         <li>CKH_RawKitchenHerb</li>
                     </thingDefs>
                 </filter>
-                <!-- キッチンハーブを固定で3要求する -->
-                <count>3</count>
+                <!-- 実数が2になるように0.1とする -->
+                <count>0.1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -141,8 +144,8 @@
                         <li>AnimalProductRaw</li>
                     </categories>
                 </filter>
-                <!-- 栄養価ベースのレシピだと1.25指定で、個数換算で25個要求されるので、それから減らして20とする -->
-                <count>20</count>
+                <!-- 元レシピが1.25指定。元の80%になるようにする。 -->
+                <count>1.0</count>
             </li>
             <li>
                 <filter>
@@ -151,8 +154,8 @@
                         <li>CKH_RawKitchenHerb</li>
                     </thingDefs>
                 </filter>
-                <!-- キッチンハーブを固定で3要求する -->
-                <count>3</count>
+                <!-- 実数が2になるように0.1とする -->
+                <count>0.1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -188,7 +191,7 @@
                     </categories>
                 </filter>
                 <!-- 単純に4倍要求する -->
-                <count>32</count>
+                <count>1.6</count>
             </li>
             <li>
                 <filter>
@@ -197,7 +200,7 @@
                     </categories>
                 </filter>
                 <!-- 単純に4倍要求する -->
-                <count>32</count>
+                <count>1.6</count>
             </li>
             <li>
                 <filter>
@@ -207,7 +210,7 @@
                     </thingDefs>
                 </filter>
                 <!-- 単純に4倍要求する -->
-                <count>12</count>
+                <count>0.4</count>
             </li>
         </ingredients>
         <products>
@@ -231,7 +234,7 @@
                     </categories>
                 </filter>
                 <!-- 単純に4倍要求する -->
-                <count>80</count>
+                <count>4.0</count>
             </li>
             <li>
                 <filter>
@@ -241,7 +244,7 @@
                     </thingDefs>
                 </filter>
                 <!-- 単純に4倍要求する -->
-                <count>12</count>
+                <count>0.4</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -268,7 +271,7 @@
                     </categories>
                 </filter>
                 <!-- 単純に4倍要求する -->
-                <count>80</count>
+                <count>4.0</count>
             </li>
             <li>
                 <filter>
@@ -278,7 +281,7 @@
                     </thingDefs>
                 </filter>
                 <!-- 単純に4倍要求する -->
-                <count>12</count>
+                <count>0.4</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
