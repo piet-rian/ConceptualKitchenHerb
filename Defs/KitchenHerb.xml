@@ -55,7 +55,7 @@
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>CKH_RawKitchenHerb</harvestedThingDef>
             <drugForHarvestPurposes>True</drugForHarvestPurposes>
-            <harvestYield>8</harvestYield>
+            <harvestYield>3</harvestYield>
             <sowMinSkill>3</sowMinSkill>
             <sowTags>
                 <li>Ground</li>
